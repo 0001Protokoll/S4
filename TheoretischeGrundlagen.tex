@@ -1,2 +1,47 @@
+\input{usepackage.tex}
+\setlength\abovedisplayshortskip{20pt}
+\setlength\belowdisplayshortskip{20pt}
+\setlength\abovedisplayskip{20pt}
+\setlength\belowdisplayskip{20pt}
+\begin{document}
 
-\section{Theoretische Grundlagen}
+\section{Theoretische Grundlagen \cite{wedler}}
+Die Quantisierung der energetischen Zustände eines Moleküls lassen sich in Abhängigkeit von dem benötigten Energiebetrag $E = h \cdot \nu$ zu einer diskreten Anregung verstehen. So entspricht zum Beispiel die benötigte Energie, um ein rotatorisch angeregten Zustand zu induzieren, dem Bereich der Mikrowellenstrahlung, also dem Frequenzbereich von 0.5-100 GHz (abhängig vom betrachteten Molekül). Schwingungsniveaus benötigen hingegen höherenergetische Strahlung um im Allgemeinen angeregt zu werden, also elektromagnetische Wellen im infraroten Spektralbereich. Die elektronische Anregung eines Moleküls benötigt die größte Energiemenge und liegt im Bereich von 1 bis 10eV, was einem Wellenlängenintervall von ungefähr 125 nm bis 1250 nm entspricht. Es ist somit ersichtlich, dass die elektronische Anregung zum großen Teil im Bereich des sichtbaren Lichtes stattfindet, für das menschliche Auge somit wahrzunehmen ist. Da das menschliche Auge jedoch kein gutes Spektrometer ist, bedienen sich physikalische Chemiker in der heutigen Zeit an digitalen Messeinheiten um z.B die elektronische Anregung eines Moleküls zu beobachten.\\
+\begin{equation}
+E_{el} > E_{Vib}> E_{rot}
+\label{eq:EnergieRating}
+\end{equation}
+\\
+Wird ein beliebiger Stoff erhitzt, so erhöht sich ferner die Gesamtenergie des Systems. In einer makroskopischen Betrachtung führt dies zum Beispiel zu einer Druckerhöhung bei konstantem Volumen gemäß dem idealen Gasgesetzt als Zustandsfunktion. Insbesondere wird auf einer mikroskopischen Betrachtung die beteiligten Moleküle bzw. Atome in einem energetisch höheren Zustand vorliegen -- z.B ein rotatorisch, schwingungs bzw. elektronisch angeregter Zustand. Durch die zuvor getätigte Überlegung wird klar, dass die benötigte Energien für einen Übergang der quantisierten Zustände (gemäß der Relation $E = h \cdot \nu$) diskret und ferner wohldefiniert ist. \\Da elementares Iod unter Normalbedingungen als Feststoff vorliegt muss dieser für eine Analyse in der Gasphase erst sublimiert werden. Wird polychromatisches Licht als Energiequelle verwendet existieren eine Vielzahl von Photonenenergien, somit wird ebenfalls eine Vielzahl von diskreten Zuständen, neben den bereits thermisch populierten Zuständen, angeregt. Um dies zu vermeiden, und sich vollständig auf den zu untersuchenden Energiebereich konzentrieren zu können, wird durch ein Gitter die verwendete elektromagnetische Strahlung als polychromatische Strahlung in monochromatische gebeugt. Somit können Energiebereiche von besonderem Interesse gezielt beobachtet werden, indem z.B zuerst das Gitter Licht in einen Energiewert beugt, und anschließend durch langsames Drehen des Gitters ein beliebiges Energieintervall in beliebiger Geschwindigkeit abgebildet werden kann.\\
+\\
+Mit zuvor getätigter Überlegung, insbesondere Gleichung \ref{eq:EnergieRating}, lässt sich die Gesamtenergie (in Wellenzahlen) eines elektronischen Zustandes wie folgt definieren : 
+\begin{equation}
+T = T_e + G + F
+\end{equation}
+wobei $T_e$ den Energiebeitrag der elektronischen Anregung, $F$ den rotatischen Teil sowie $G$ den Schwingungstherm meint. $G$ als Schwingungsenergie ist beschrieben  als : 
+\begin{equation}
+G(v) =  \omega_e \left(v+\frac{1}{2}\right)-\omega_e x_e\left(v+\frac{1}{2}\right)^2
+\end{equation}
+In guter Näherung kann der Energiebeitrag für den rotatorischen Teil aufgrund seines verhältnismäßig geringen Betrags vernachlässigt werden. Ferner wird berücksichtigt, dass die elektronische Energie für jeden Zustand gerade einer Konstante entspricht und diese Null ist, wenn sich das System im elektronischen Grundzustand befindet. Wird nun die Differenz zweier Gesamtenergietherme aufgestellt ergibt sich : 
+\begin{equation}
+T'-T''=\Delta \tilde{v} = \Delta T_e + \Delta G ...
+\end{equation}
+\begin{equation*}
+... = v_e + \omega_e'\cdot \left(v' + \frac{1}{2}\right) - \omega_e'x_e'\left( v'+\frac{1}{2}\right)-\left[\omega_e''\cdot \left(v'' + \frac{1}{2}\right) - \omega_e''x_e''\left(v''+\frac{1}{2}\right)\right]
+\end{equation*}
+\\
+Innerhalb einer Progression vereinfacht sich der Therm zu :
+\begin{equation}
+\Delta \tilde v = \omega_e' - 2\omega_e'x_e'\cdot v'
+\label{eq:DeltaWellenzahl}
+\end{equation}
+Bildet man nun die Ableitung aus Gleichung \ref{eq:DeltaWellenzahl} folgt die Änderung der Abstände bezogen auf die Variable der Wellenzahl $v'$ innerhalb einer Progression :
+\begin{equation}
+\frac{d}{dv'} \Delta \tilde{v} = \Delta^2 \tilde{v} = \omega_e'x_e'
+\label{eq:AbleitungDeltaWellenzahl}
+\end{equation} 
+Der Zusammenhang ist linear mit den Schwingungskonstanten $\omega_e$ sowie $x_e$. 
+\\
+\\
+Wird betrachtet, dass die Dissoziationsenegie $D_0$ gerade die Summe alle $\Delta \tilde{v}$ ist, und ein linearer Zusammenhang aus den zuvor getätigten Einschränkungen folgt, dann kann durch einfache Messung einer kleinen Anzahl unterschiedlicher $\Delta \tilde{v}$ die Dissoziationsenergie angenähert werden. Durch eine lineare Regression und anschließender Integration als Fläche unterhalb der Kurve (über infinitesimale Summe aller $\Delta \tilde{v}$) wird somit $D_0$ näherungsweise bestimmt.
+\end{document}
